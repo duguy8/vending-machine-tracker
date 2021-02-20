@@ -17,13 +17,13 @@ RSpec.describe "When a visitor visits a snack show page", type: :feature do
     expect(page).to have_content(reeses.price)
 
     within("#location-#{dons.id}") do
-      expect(page).to have_content(dons.name)
+      expect(page).to have_content(dons.location)
       expect(page).to have_content("3 kinds of snacks")
       expect(page).to have_content("Average price of $1.83")
     end
 
     within("#location-#{basement.id}") do
-      expect(page).to have_content(basement.name)
+      expect(page).to have_content(basement.location)
       expect(page).to have_content("2 kinds of snacks")
     end
   end

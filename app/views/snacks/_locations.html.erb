@@ -1,0 +1,6 @@
+<% snack.machines.each do |machine| %>
+  <div id="location-<%= machine.id %>">
+    <p> <%= machine.location %> </p>
+    <p> <%= machine.snacks.size %> kinds of snacks</p>
+    <p> Average price of $<%= machine.average_snack_price %> </p>
+<% end %>

@@ -1,0 +1,3 @@
+<h1> <%= @snack.name %> </h1>
+<h3> <%= @snack.price %> </h3>
+<%= render partial: 'locations', locals: {snack: @snack} %>
