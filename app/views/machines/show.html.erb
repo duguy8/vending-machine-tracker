@@ -2,4 +2,6 @@
 
 <%= render partial: 'snacks', locals: {all: @snacks} %>
 
+<% if !@machine.snacks.empty? %>
 <h4>Average price: <%= @machine.average_snack_price.round(2) %></h4>
+<% end %>
